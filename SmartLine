@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {  
+           
+            margin: 0;
+            padding: 0;
+        } 
+        #header {
+            padding: 15px;
+            padding-bottom: 0;
+            font-size: 40px;  
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            float: left;
+            width: 100%;
+            color: rgb(0, 255, 170);
+            background-color: rgb(100, 99, 99);
+            position: absolute;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        ul li {
+            list-style-type: none;
+            margin: 0 ;
+            transition: 0.2s;
+        }
+        ul li a {
+            display: block;
+            position: relative;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.5s;
+        }
+        ul:hover li a {
+            transform: scale(1.5);
+            opacity: 0.2;
+            filter: blur(3px);
+        }
+        ul li a:hover {
+            transform: scale(1);
+            opacity: 1;
+            filter: blur(0);
+        }
+        ul li a:before {
+            content: '';
+            position: absolute;
+            background-color: rgb(221, 221, 221);
+          
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(0);
+            z-index: -1;
+        }
+        .s1:hover{
+            color: rgb(255, 102, 0);
+        }
+        ul li a:hover:before {
+            transition: transform 0.5s;
+            transform-origin: left;
+            transform: scaleY(0.2);
+            transform: scaleX(0.5);
+        }
+    
+/*         
+        #FID {
+            float: left;
+        } */
+
+        .NAV {
+    
+            float: right;
+            text-decoration: none;
+        }
+
+        .header {
+            display: block;
+            float: right;
+        }
+
+        .na1 {
+            padding: 12px;
+            display: block;
+            float: left ;
+            color: white;
+            text-decoration: none;
+            
+        }
+        .na1:hover{
+            color: rgb(0, 255, 170);  
+            
+        }
+        .span1:hover{
+            color: rgb(255, 102, 0);
+        }
+        .span1 { 
+            float: left;
+            width: auto;   
+            color: rgb(255, 102, 0);
+        }
+
+        
+        #div1 {
+            padding: 30px;
+        }
+        
+        .div1 {
+            padding: 10px;
+        }
+        
+        
+
+        #div11 {
+            float: left;
+            width: 30%;
+            height: auto;
+        }
+        #div12 {
+            float: left;
+            width: 30%;
+            height: auto;
+        }
+        #div13 {
+            float: left;
+            width: 30%;
+            height: auto;
+        }
+         
+        /* Second Div */
+
+        .D2 {
+          height: 100vh;
+          background-image: url(sky.jpg);
+          background-attachment: inherit;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
+        #DH {
+            position: absolute;
+            top: 35%;
+            left: 50px;
+            color: white;
+        }
+        #DP {
+            position: absolute;
+            top: 41%;
+            left: 52px;
+            color: white;
+            font-weight: bold;
+        }
+        /* column */
+
+    .column {
+        background-image: url(ьщгтефшт.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        text-align: center;
+    }
+    .column2 {
+        background-image: url(ьщгтефшт2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        text-align: center;
+    }
+ .columnimg {
+     width: 100%;
+     height: auto;
+ }
+
+ .col h1{
+     color: rgb(255, 255, 255);
+     opacity: 0.8;
+ }
+
+
+
+ .col {
+     background: inherit;
+     float: left;
+     width: 18%;
+ }
+ .col1 {
+    margin-left: 23.5%;
+ }
+ .divnews {
+     color: rgb(255, 255, 255);
+     background-color: rgb(100, 99, 99);
+}
+ .divnews2 {
+     margin-bottom: -10px;
+     padding-bottom: 10px;
+ }
+.col fieldset:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.col3 {
+    margin-right: 18%;
+}
+
+.col4 {
+    margin-left: 23.5%;
+}
+
+
+
+/* footer */
+ #footer {
+     color: rgb(255, 255, 255);
+     background-color: inherit;
+ }
+ .FH3 {
+     font-size: 23px;
+ }
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+   
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>SL1</title>
+</head>
+<body style="background-color: rgb(100, 99, 99);">
+
+    <div  id="header">
+       
+            <span class="span1" id="FS">Smart</span>Line
+
+        
+       <nav class="NAV"; id="home">
+           <ul>
+           <li><a href="#home" class="na1" id="a1"><span class="s1";>Ho</span>me</a></li>
+           <li><a href="#courses" class="na1" id="a1"><span class="s1";>Cou</span>rses</a></li>
+           <li><a href="#qwer" class="na1" id="a2"><span class="s1";>Eve</span>nts</a></li>
+           <li><a href="slider.html" class="na1" id="a3"><span class="span1">About</span><span>Us</span></a></li>
+           <li><a href="LogIn0.html" class="na1" id="a4"> <span class="span1">Log</span>In</a></li>
+            </ul>
+       </nav>
+    </div>
+        <div class="D2">
+           <h1 id="DH";>This is SmartLine</h1>
+           <p id="DP">Welcome to our Web-Page</p> 
+        </div>
+    
+  
+    <div id="courses";>
+        <div class="divnews divnews2">
+            <h1 class="head news";>
+                <center>Courses :</center>
+            </h1> 
+        </div>
+        <div class="column">
+            <div class="col col1";>
+                <fieldset>
+                    <h1>Biology</h1>
+                    <img src="biologiya.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col2";>
+                <fieldset>
+                    <h1 style="font-size: 24px;">Mental Arithmetic</h1>
+                    <img src="mentalarifmetika.jfif" class="columnimg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col3";>
+                <fieldset>
+                    <h1>English</h1>
+                    <img src="IELTS1.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+        </div> 
+        <div class="column">
+            
+            <div class="col col4";>
+                <fieldset>
+                    <h1>Korean</h1>
+                    <img src="Koreys tili1.jfif" class="columnimg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col5";>
+                <fieldset>
+                   
+                     <h1>Math</h1>
+                    <img src="matematika.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col6";>
+                <fieldset>
+                    <h1>Russian</h1>
+                    <img src="rustili1.jfif" alt="" class="columnimg";>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="events";>
+    <div class="divnews divnews2";  >
+            <h1 class="head news2"; id="NEWS2";>
+               <center>Events :</center></h1> 
+      
+        
+        <div class="column2", id="qwer" >
+            <div class="col col1";>
+                <fieldset>
+                    <h1>Students</h1>
+                    <img src="yangilik4.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col2";>
+                <fieldset>
+                    <h1 >Telex Viza</h1>
+                    <img src="yangilik1.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col3";>
+                <fieldset>
+                    <h1>Students</h1>
+                    <img src="yangilik2.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+        </div> 
+        <div class="column2">      
+            <div class="col col4";>
+                <fieldset>
+                    <h1>English</h1>                    <img src="IELTS.jfif"; alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col5";>
+                <fieldset>
+                    <h1>Telex Visa</h1>
+                    <img src="yangilik0.jfif" alt="" class="columnimg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+            <div class="col col6";>
+                <fieldset>
+                    <h1>Russian</h1>
+                    <img src="rustili1.jfif" alt="" class="columnimg";>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae repudiandae aliquid, distinctio quasi minima dolor qui rem porro possimus animi exercitationem quod mollitia paria.</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container"; id="footer";>
+        <h3 class="FH3";><span style="color: rgb(0, 255, 170);">Co-</span>founder : </h3>
+        <h3 class="FH3";><span style="color: rgb(0, 255, 170);">Dir</span>ector :    </h3>
+        <h3 class="FH3";><span style="color: rgb(0, 255, 170);">Man</span>ager :    </h3>
+    </div> 
+
+</body>
+</html>
